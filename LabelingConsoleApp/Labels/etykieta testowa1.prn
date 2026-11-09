@@ -1,0 +1,20 @@
+I8,A,001
+
+
+Q671,024
+q831
+rN
+S4
+D7
+ZT
+JF
+O
+R167,0
+f100
+N
+A54,28,0,1,2,4,N,"Testowy numer partii"
+A67,87,0,1,2,4,N,"testowy kontrahent"
+A64,162,0,5,1,1,N,"{{WEIGHT}}"
+A50,306,0,1,4,4,N,"{{DATE}}"
+A286,164,0,1,4,4,N,"KG"
+P1
