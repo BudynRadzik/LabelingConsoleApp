@@ -1,86 +1,108 @@
+ <div align="center">
 
+# `LabelingConsoleApp`
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,50:111C3A,100:00E5FF&height=220&section=header&text=LabelingConsoleApp&fontSize=42&fontColor=00E5FF&animation=fadeIn&fontAlignY=38&desc=PRECISION%20WEIGHING%20%7C%20LABEL%20PRINTING&descAlignY=60&descSize=15" width="100%" />
-</p>
+### <span style="color:#00F5FF">WEIGH.</span> <span style="color:#B026FF">PROCESS.</span> <span style="color:#00F5FF">LABEL.</span>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&width=650&lines=Smart+Product+Weighing;Accurate+Label+Generation;Console+Application+%7C+.NET+8;Built+with+C%23" alt="Typing SVG" />
-</p>
+**A console-based product weighing and label printing application built with C# and .NET 8.**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/Platform-Console-00E5FF?style=for-the-badge&logo=windows-terminal&logoColor=black" />
-  <img src="https://img.shields.io/badge/Status-In%20Development-FF00FF?style=for-the-badge" />
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:090014,50:24104F,100:00D9FF&height=180&section=header&text=LABELING%20CONSOLE&fontSize=36&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Industrial%20Weighing%20%7C%20Label%20Automation&descAlignY=60&descSize=14" width="100%" />
 
-<p align="center">
-  <b>⚡ WEIGH. PROCESS. PRINT. ⚡</b>
-</p>
+[![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![C#](https://img.shields.io/badge/C%23-Programming-239120?style=for-the-badge&logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
+[![Platform](https://img.shields.io/badge/Platform-Console-00D9FF?style=for-the-badge&logo=windows-terminal&logoColor=white)](https://github.com/BudynRadzik/LabelingConsoleApp)
+[![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/BudynRadzik/LabelingConsoleApp)
+
+</div>
 
 ---
 
-## 🌌 About The Project
+## `// NAVIGATION`
 
-**LabelingConsoleApp** is a C# console application built on **.NET 8**, designed to handle product weighing and label printing.
-
-The application provides a solution for processing weighed products and generating labels containing information about the weighed items.
-
-Its purpose is to simplify the weighing and labeling workflow while providing a lightweight and straightforward console-based environment.
-
-### 🎯 Main Goals
-
-- ⚖️ Product weighing.
-- 🖨️ Printing labels for weighed products.
-- ⚡ Streamlining the weighing and labeling process.
-  
+| | | |
+|:---:|:---:|:---:|
+| [ABOUT](#about) | [FEATURES](#features) | [TECH STACK](#tech-stack) |
+| [REQUIREMENTS](#requirements) | [INSTALLATION](#installation) | [WORKFLOW](#application-workflow) |
+| [WEIGHING](#weighing-modes) | [PRINTING](#label-printing) | [MENU](#application-menu) |
+| [CONFIGURATION](#configuration) | [ROADMAP](#roadmap) | [LICENSE](#license) |
 
 ---
 
-## 🛠️ Tech Stack
+<a id="about"></a>
+## `01 // ABOUT`
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,visualstudio,git,github&theme=dark" />
-</p>
+**LabelingConsoleApp** is a C# console application designed to support product weighing and label printing in a production or retail environment.
 
-| Technology | Description |
-|:---|:---|
-| 💜 C# | Main programming language |
-| ⚡ .NET 8 | Application framework |
-| 💻 Console | Application interface |
-| 🛠️ Visual Studio 2022 | Development environment |
-| 🐙 Git | Version control |
+The application connects the weighing process with label generation and printing. It supports two weighing modes:
 
----
+- **AUTO** — continuously reads weight data from a connected weighing scale.
+- **MANUAL** — allows the operator to enter the weight manually.
 
-## ⚙️ Features
+Depending on the selected label format, the application can generate and print product labels or run without printing in simulation mode.
 
-| Feature | Description |
-|:---|:---|
-| ⚖️ Product Weighing | Handles product weighing |
-| 🖨️ Label Printing | Prints product labels |
-| 💻 Console Interface | Lightweight command-line application |
-| 🚀 .NET 8 | Built on modern .NET technology |
+The project has been tested with:
+
+- **Zebra LP 2844** label printer (USB, ZPL/EPL).
+- **OHAUS DEFENDER 2200** weighing scale (RS232 or RS232-to-USB converter).
 
 ---
 
-## 📋 Requirements
+<a id="features"></a>
+## `02 // FEATURES`
 
-Before running the application, make sure you have:
-
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [Git](https://git-scm.com/)
-- A compatible operating system (Windows, Linux or macOS)
-- Zebra printer or other printer using ZPL /EPL language. Im using Zebra 2844 USB.
-- Scale with RS232 Protocol or converter RS232/USB. Im using OHAUS DEFENDER 2200
-  if you want to tes the app without any devices you need to:
-  Select in menu manual weighing  and chanage label format on" 0"
-- If you chose Label Format "0" you can use application without printing labels (simulate in console window)
+- Automatic weighing mode with continuous weight reading.
+- Manual weighing mode with operator-entered values.
+- Product label generation.
+- Label printing support.
+- Configurable label format.
+- Configurable label quantity.
+- Console-based operation.
+- Simulation mode without a printer.
+- Hardware integration with supported weighing and printing devices.
 
 ---
 
-## 🚀 Installation
+<a id="tech-stack"></a>
+## `03 // TECH STACK`
+
+<div align="center">
+
+[![CSharp](https://skillicons.dev/icons?i=cs,dotnet,visualstudio,git,github)](https://skillicons.dev)
+
+</div>
+
+| Technology | Purpose |
+|---|---|
+| C# | Application development |
+| .NET 8 | Runtime and framework |
+| Console Application | User interface |
+| RS232 / USB | Scale communication |
+| ZPL / EPL | Label printer languages |
+
+---
+
+<a id="requirements"></a>
+## `04 // REQUIREMENTS`
+
+### Software
+
+- .NET 8 SDK.
+- Windows recommended for the tested USB hardware setup.
+- A terminal or command-line environment.
+
+### Hardware (optional)
+
+| Device | Connection | Purpose |
+|---|---|---|
+| Zebra LP 2844 | USB | Label printing |
+| OHAUS DEFENDER 2200 | RS232 / RS232-to-USB | Product weighing |
+
+> **Simulation mode:** You do not need a physical scale or printer to explore the application. Select `MANUAL` weighing and set the label format to `0`.
+
+---
+
+<a id="installation"></a>
+## `05 // INSTALLATION`
 
 ### 1. Clone the repository
 
@@ -106,7 +128,7 @@ dotnet restore
 dotnet build
 ```
 
-### 5. Run the application
+### 5. Run
 
 ```bash
 dotnet run
@@ -114,162 +136,174 @@ dotnet run
 
 ---
 
-## 🏗️ Project Workflow
+<a id="application-workflow"></a>
+## `06 // APPLICATION WORKFLOW`
 
-The application supports two operating modes depending on the selected label format.
-
-### 🔄 Main Workflow
+The application starts by asking the operator to select a label format and weighing mode.
 
 ```mermaid
 flowchart TD
-    A([START]) --> B[Select Label Format]
-    B --> C{Label Format = 0?}
-
-    C -->|YES| D[No Printing Labels]
-    C -->|NO| E[Printing Labels]
-
-    D --> F[Select Weighing Mode]
+    A([START]) --> B[Select label format]
+    B --> C{Format = 0?}
+    C -->|Yes| D[Disable label printing]
+    C -->|No| E[Enable label printing]
+    D --> F{Select weighing mode}
     E --> F
-
-    F --> G{Weighing Mode}
-
-    G -->|AUTO| H[Automatic Weighing Loop]
-    G -->|MANUAL| I[Enter Weight Manually]
-
-    H --> J[Process Weight Data]
-    I --> J
-
-    J --> K{Printing Enabled?}
-    K -->|YES| L[Generate Product Label]
-    K -->|NO| M[Finish Weighing]
-
-    L --> N[Print Label]
-    N --> O([END])
-    M --> O
-
-    style A fill:#071426,stroke:#00E5FF,color:#00E5FF
-    style B fill:#111C3A,stroke:#00E5FF,color:#FFFFFF
-    style C fill:#111C3A,stroke:#FF00FF,color:#FFFFFF
-    style D fill:#111C3A,stroke:#00E5FF,color:#FFFFFF
-    style E fill:#111C3A,stroke:#00E5FF,color:#FFFFFF
-    style F fill:#111C3A,stroke:#FF00FF,color:#FFFFFF
-    style G fill:#111C3A,stroke:#FF00FF,color:#FFFFFF
-    style H fill:#111C3A,stroke:#00E5FF,color:#FFFFFF
-    style I fill:#111C3A,stroke:#00E5FF,color:#FFFFFF
-    style J fill:#111C3A,stroke:#FF00FF,color:#FFFFFF
-    style K fill:#111C3A,stroke:#FF00FF,color:#FFFFFF
-    style L fill:#111C3A,stroke:#00E5FF,color:#FFFFFF
-    style M fill:#111C3A,stroke:#00E5FF,color:#FFFFFF
-    style N fill:#111C3A,stroke:#FF00FF,color:#FFFFFF
-    style O fill:#071426,stroke:#00E5FF,color:#00E5FF
+    F -->|AUTO| G[Read weight continuously]
+    F -->|MANUAL| H[Enter weight manually]
+    G --> I[Process weight data]
+    H --> I
+    I --> J{Printing enabled?}
+    J -->|Yes| K[Generate product label]
+    K --> L[Print label]
+    J -->|No| M[Skip printing]
+    L --> N{AUTO mode?}
+    M --> N
+    N -->|Yes| G
+    N -->|No| O([END])
 ```
 
-### ⚖️ Weighing Modes
+### Workflow overview
 
-The application supports two different weighing modes:
+1. Select the label format.
+2. Select the weighing mode.
+3. Acquire weight data automatically or enter it manually.
+4. Process the weight.
+5. Generate and print a label if printing is enabled.
+6. In AUTO mode, continue reading weight data.
 
-| Mode | Description |
-|:---|:---|
-| 🔄 **AUTO** | Automatic weighing. The application continuously reads weight data in a loop and processes subsequent products. |
-| ✍️ **MANUAL** | Manual weighing. The user enters the product weight directly through the console. |
-
-**AUTO Mode**
-- Continuously reads weight data.
-- Processes products automatically in a loop.
-- Generates and prints labels when printing is enabled.
-
-**MANUAL Mode**
-- Allows the user to enter product weight manually.
-- Processes the entered weight.
-- Generates and prints labels when printing is enabled.
-
-### 🖨️ Label Printing Configuration
-
-The selected label format determines whether labels are printed.
-
-| Label Format | Printing Mode |
-|:---|:---|
-| `0` | No Printing Labels |
-| Other formats | Printing Labels Enabled |
-
-When printing is disabled, the application processes weighing data without generating or printing product labels.
-
-When printing is enabled, the application generates a product label and sends it to the printer.
-
-### ⚙️ Application Menu Options
-
-The application also provides menu options for changing operational settings:
-
-| Menu Option | Description |
-|:---|:---|
-| 🏷️ Change Label Format | Change the currently selected label format |
-| 🔢 Change Label Quantity | Set the number of labels to print |
-
-These options allow the user to modify printing configuration without changing the overall application workflow.
 ---
 
-## 🔧 Configuration
+<a id="weighing-modes"></a>
+## `07 // WEIGHING MODES`
 
-The application targets **.NET 8**.
+### AUTO mode
 
-Project configuration is managed through the `.csproj` file.
+- Reads weight data continuously from the connected scale.
+- Processes incoming weight values.
+- Supports an ongoing weighing workflow.
 
-```xml
-<TargetFramework>net8.0</TargetFramework>
+### MANUAL mode
+
+- Allows the operator to enter the weight directly.
+- Does not require a connected weighing scale.
+- Useful for testing and simulation.
+
+---
+
+<a id="label-printing"></a>
+## `08 // LABEL PRINTING`
+
+The application supports label printing using a compatible printer.
+
+### Tested printer
+
+**Zebra LP 2844**
+
+- USB connection.
+- ZPL / EPL printer language support.
+
+### Label format
+
+The selected label format determines whether the application should generate and print labels.
+
+| Setting | Behaviour |
+|---|---|
+| `0` | Printing disabled |
+| Other configured format | Label generation and printing enabled |
+
+> The actual available label formats depend on the application's configuration.
+
+---
+
+<a id="application-menu"></a>
+## `09 // APPLICATION MENU`
+
+The application provides menu options for managing the weighing and printing process.
+
+Available options include:
+
+- Change label format.
+- Change label quantity.
+- Select the weighing mode.
+- Continue with the weighing workflow.
+
+---
+
+<a id="configuration"></a>
+## `10 // CONFIGURATION`
+
+### Running without hardware
+
+To test the application without a physical scale or printer:
+
+1. Start the application.
+2. Select `MANUAL` weighing mode.
+3. Set the label format to `0`.
+4. Enter the weight manually when prompted.
+
+With label format `0`, printing is disabled. This allows the application to be explored without connecting external devices.
+
+### Hardware setup
+
+For a physical setup:
+
+- Connect the Zebra LP 2844 printer via USB.
+- Connect the OHAUS DEFENDER 2200 scale using RS232 or an RS232-to-USB converter.
+- Make sure the required device drivers and operating-system settings are configured.
+
+---
+
+<a id="roadmap"></a>
+## `11 // ROADMAP`
+
+Potential future improvements:
+
+- [ ] Extended printer configuration.
+- [ ] Additional printer models.
+- [ ] More weighing scale integrations.
+- [ ] Improved error handling and diagnostics.
+- [ ] Expanded configuration options.
+- [ ] More flexible label templates.
+
+---
+
+<a id="screenshots"></a>
+## `12 // SCREENSHOTS`
+
+Application screenshots can be added here.
+
+```text
+docs/
+└── screenshots/
+    ├── main-menu.png
+    ├── weighing-mode.png
+    └── label-printing.png
+```
+
+Example Markdown:
+
+```markdown
+![Application main menu](docs/screenshots/main-menu.png)
 ```
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-  <i>Application screenshots coming soon...</i>
-</p>
-
-<!-- Add screenshots here when available:
-<p align="center">
-  <img src="docs/screenshots/application.png" width="80%" />
-</p>
--->
-
----
-
-## 🗺️ Roadmap
-
-- [x] Initial project setup
-- [x] .NET 8 foundation
-- [ ] Expand product weighing workflow
-- [ ] Improve label generation
-- [x] Expand printer integration
-- [ ] Add application documentation
-- [ ] Add screenshots and usage examples
-
----
-
-## 📜 License
+<a id="license"></a>
+## `13 // LICENSE`
 
 No license information has been specified yet.
 
 ---
 
+<div align="center">
 
+### `SYSTEM STATUS: READY`
 
-<p align="center">
-  <a href="https://github.com/BudynRadzik">
-    <img src="https://img.shields.io/badge/GitHub-BudynRadzik-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://github.com/BudynRadzik/LabelingConsoleApp">
-    <img src="https://img.shields.io/badge/Repository-LabelingConsoleApp-00E5FF?style=for-the-badge&logo=github&logoColor=black" />
-  </a>
-</p>
+**Developed with C# and .NET 8**
 
----
+[![GitHub](https://img.shields.io/badge/VIEW%20SOURCE-GitHub-00D9FF?style=for-the-badge&logo=github)](https://github.com/BudynRadzik/LabelingConsoleApp)
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,50:111C3A,100:050816&height=120&section=footer" width="100%" />
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,50:24104F,100:090014&height=110&section=footer" width="100%" />
 
-<p align="center">
-  <b>⚡ LABELING CONSOLE APP ⚡</b><br/>
-  <sub>Precision • Efficiency • Technology</sub>
-</p>
+</div>
